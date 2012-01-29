@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89005CC814D4E1A600022686 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89005CC714D4E1A600022686 /* Cocoa.framework */; };
+		89005CD214D4E1A600022686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89005CD014D4E1A600022686 /* InfoPlist.strings */; };
+		89005CD414D4E1A600022686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89005CD314D4E1A600022686 /* main.m */; };
+		89005CDB14D4E1A600022686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89005CDA14D4E1A600022686 /* AppDelegate.m */; };
+		89005CDE14D4E1A700022686 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89005CDC14D4E1A700022686 /* MainMenu.xib */; };
+		892D962A14D4F31F00249288 /* BookData.m in Sources */ = {isa = PBXBuildFile; fileRef = 892D962914D4F31F00249288 /* BookData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89005CC314D4E1A600022686 /* BookmarkExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookmarkExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89005CC714D4E1A600022686 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		89005CCA14D4E1A600022686 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		89005CCB14D4E1A600022686 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		89005CCC14D4E1A600022686 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89005CCF14D4E1A600022686 /* BookmarkExtractor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BookmarkExtractor-Info.plist"; sourceTree = "<group>"; };
+		89005CD114D4E1A600022686 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89005CD314D4E1A600022686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89005CD514D4E1A600022686 /* BookmarkExtractor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookmarkExtractor-Prefix.pch"; sourceTree = "<group>"; };
+		89005CD914D4E1A600022686 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89005CDA14D4E1A600022686 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89005CDD14D4E1A700022686 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		892D962814D4F31F00249288 /* BookData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookData.h; sourceTree = "<group>"; };
+		892D962914D4F31F00249288 /* BookData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89005CC014D4E1A600022686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89005CC814D4E1A600022686 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89005CB814D4E1A600022686 = {
+			isa = PBXGroup;
+			children = (
+				89005CCD14D4E1A600022686 /* BookmarkExtractor */,
+				89005CC614D4E1A600022686 /* Frameworks */,
+				89005CC414D4E1A600022686 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89005CC414D4E1A600022686 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89005CC314D4E1A600022686 /* BookmarkExtractor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89005CC614D4E1A600022686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89005CC714D4E1A600022686 /* Cocoa.framework */,
+				89005CC914D4E1A600022686 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89005CC914D4E1A600022686 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89005CCA14D4E1A600022686 /* AppKit.framework */,
+				89005CCB14D4E1A600022686 /* CoreData.framework */,
+				89005CCC14D4E1A600022686 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		89005CCD14D4E1A600022686 /* BookmarkExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				89005CD914D4E1A600022686 /* AppDelegate.h */,
+				89005CDA14D4E1A600022686 /* AppDelegate.m */,
+				892D962814D4F31F00249288 /* BookData.h */,
+				892D962914D4F31F00249288 /* BookData.m */,
+				89005CDC14D4E1A700022686 /* MainMenu.xib */,
+				89005CCE14D4E1A600022686 /* Supporting Files */,
+			);
+			path = BookmarkExtractor;
+			sourceTree = "<group>";
+		};
+		89005CCE14D4E1A600022686 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89005CCF14D4E1A600022686 /* BookmarkExtractor-Info.plist */,
+				89005CD014D4E1A600022686 /* InfoPlist.strings */,
+				89005CD314D4E1A600022686 /* main.m */,
+				89005CD514D4E1A600022686 /* BookmarkExtractor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89005CC214D4E1A600022686 /* BookmarkExtractor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89005CE114D4E1A700022686 /* Build configuration list for PBXNativeTarget "BookmarkExtractor" */;
+			buildPhases = (
+				89005CBF14D4E1A600022686 /* Sources */,
+				89005CC014D4E1A600022686 /* Frameworks */,
+				89005CC114D4E1A600022686 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookmarkExtractor;
+			productName = BookmarkExtractor;
+			productReference = 89005CC314D4E1A600022686 /* BookmarkExtractor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89005CBA14D4E1A600022686 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Waterbolt;
+			};
+			buildConfigurationList = 89005CBD14D4E1A600022686 /* Build configuration list for PBXProject "BookmarkExtractor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89005CB814D4E1A600022686;
+			productRefGroup = 89005CC414D4E1A600022686 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89005CC214D4E1A600022686 /* BookmarkExtractor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89005CC114D4E1A600022686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89005CD214D4E1A600022686 /* InfoPlist.strings in Resources */,
+				89005CDE14D4E1A700022686 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89005CBF14D4E1A600022686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89005CD414D4E1A600022686 /* main.m in Sources */,
+				89005CDB14D4E1A600022686 /* AppDelegate.m in Sources */,
+				892D962A14D4F31F00249288 /* BookData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89005CD014D4E1A600022686 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89005CD114D4E1A600022686 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89005CDC14D4E1A700022686 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89005CDD14D4E1A700022686 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89005CDF14D4E1A700022686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		89005CE014D4E1A700022686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		89005CE214D4E1A700022686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BookmarkExtractor/BookmarkExtractor-Prefix.pch";
+				INFOPLIST_FILE = "BookmarkExtractor/BookmarkExtractor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89005CE314D4E1A700022686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BookmarkExtractor/BookmarkExtractor-Prefix.pch";
+				INFOPLIST_FILE = "BookmarkExtractor/BookmarkExtractor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89005CBD14D4E1A600022686 /* Build configuration list for PBXProject "BookmarkExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89005CDF14D4E1A700022686 /* Debug */,
+				89005CE014D4E1A700022686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89005CE114D4E1A700022686 /* Build configuration list for PBXNativeTarget "BookmarkExtractor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89005CE214D4E1A700022686 /* Debug */,
+				89005CE314D4E1A700022686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89005CBA14D4E1A600022686 /* Project object */;
+}
