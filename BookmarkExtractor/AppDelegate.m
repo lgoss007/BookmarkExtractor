@@ -114,6 +114,10 @@
 	[_extractProgress setHidden:NO];
 	[_extractProgress startAnimation:self];
 	
+	[_booksTableView setDataSource:nil];
+	[_bookmarkTextView setString:@""];
+	[_bookmarkTextView setNeedsDisplay:YES];
+	
 	[self setupBooks];
 	
 	bookmarks = nil;
@@ -178,6 +182,9 @@
 			[books removeObjectAtIndex:i];
 		}
 	}
+	
+	[_booksTextField setStringValue:@""];
+	[_booksDataTextField setStringValue:@""];
 	
 	[_booksTableView setDataSource:self];
 	[_booksTableView setNeedsDisplay];
