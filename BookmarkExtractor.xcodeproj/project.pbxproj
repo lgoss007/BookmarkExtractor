@@ -13,6 +13,8 @@
 		89005CDB14D4E1A600022686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89005CDA14D4E1A600022686 /* AppDelegate.m */; };
 		89005CDE14D4E1A700022686 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89005CDC14D4E1A700022686 /* MainMenu.xib */; };
 		892D962A14D4F31F00249288 /* BookData.m in Sources */ = {isa = PBXBuildFile; fileRef = 892D962914D4F31F00249288 /* BookData.m */; };
+		892D965D14DB6E9800249288 /* DndTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 892D965C14DB6E9800249288 /* DndTextField.m */; };
+		892D966014DB70CE00249288 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 892D965F14DB70CE00249288 /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		89005CDD14D4E1A700022686 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		892D962814D4F31F00249288 /* BookData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookData.h; sourceTree = "<group>"; };
 		892D962914D4F31F00249288 /* BookData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookData.m; sourceTree = "<group>"; };
+		892D965B14DB6E9800249288 /* DndTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DndTextField.h; sourceTree = "<group>"; };
+		892D965C14DB6E9800249288 /* DndTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DndTextField.m; sourceTree = "<group>"; };
+		892D965F14DB70CE00249288 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 		89005CB814D4E1A600022686 = {
 			isa = PBXGroup;
 			children = (
+				892D965F14DB70CE00249288 /* icon.icns */,
 				89005CCD14D4E1A600022686 /* BookmarkExtractor */,
 				89005CC614D4E1A600022686 /* Frameworks */,
 				89005CC414D4E1A600022686 /* Products */,
@@ -87,6 +93,8 @@
 				89005CDA14D4E1A600022686 /* AppDelegate.m */,
 				892D962814D4F31F00249288 /* BookData.h */,
 				892D962914D4F31F00249288 /* BookData.m */,
+				892D965B14DB6E9800249288 /* DndTextField.h */,
+				892D965C14DB6E9800249288 /* DndTextField.m */,
 				89005CDC14D4E1A700022686 /* MainMenu.xib */,
 				89005CCE14D4E1A600022686 /* Supporting Files */,
 			);
@@ -157,6 +165,7 @@
 			files = (
 				89005CD214D4E1A600022686 /* InfoPlist.strings in Resources */,
 				89005CDE14D4E1A700022686 /* MainMenu.xib in Resources */,
+				892D966014DB70CE00249288 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +179,7 @@
 				89005CD414D4E1A600022686 /* main.m in Sources */,
 				89005CDB14D4E1A600022686 /* AppDelegate.m in Sources */,
 				892D962A14D4F31F00249288 /* BookData.m in Sources */,
+				892D965D14DB6E9800249288 /* DndTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
