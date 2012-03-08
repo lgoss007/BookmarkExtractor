@@ -131,6 +131,10 @@
 	for(NSString* key in keys)
 	{
 		NSDictionary* dictSub1 = [dict objectForKey:key];
+		
+		if(![dictSub1 isKindOfClass:[NSDictionary class]])
+			continue;
+		
 		NSArray* keysSub1 = [dictSub1 allKeys];
 		
 		for(NSString* key1 in keysSub1)
