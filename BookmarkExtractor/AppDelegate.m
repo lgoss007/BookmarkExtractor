@@ -106,7 +106,7 @@
 				}
 			}
 		}
-	}	
+	}
 }
 
 -(IBAction)runExtractor:(id)sender
@@ -156,6 +156,19 @@
 							book.name = [NSString stringWithFormat:@"Unknown: %@", book.packageHash];
 							[books addObject:book];
 							[booksFound setValue:book.name forKey:bdk];
+						}
+					}
+					else if([dObj objectForKey:@"annotationAssetID"] != nil)
+					{
+						NSString* aid = [dObj objectForKey:@"annotationAssetID"];
+						
+						if([booksFound objectForKey:aid] == nil)
+						{
+							BookData* book = [[BookData alloc] init];
+							book.packageHash = aid;
+							book.name = [NSString stringWithFormat:@"Unknown: %@", book.packageHash];
+							[books addObject:book];
+							[booksFound setValue:book.name forKey:aid];
 						}
 					}
 				}
@@ -209,6 +222,10 @@
 		{
 			dkObj = [dObj objectForKey:@"bookDatabaseKey"];
 		}
+		else if([dObj objectForKey:@"annotationAssetID"] != nil)
+		{
+			dkObj = [dObj objectForKey:@"annotationAssetID"];
+		}
 		
 		if(dkObj == nil || ![dkObj isEqualToString:key])
 			continue;
@@ -223,10 +240,20 @@
 			objText = [dObj objectForKey:@"text"];
 			showObj = YES;
 		}
+		else if([dObj objectForKey:@"annotationSelectedText"] != nil)
+		{
+			objText = [dObj objectForKey:@"annotationSelectedText"];
+			showObj = YES;
+		}
 		
 		if([dObj objectForKey:@"textualContext"] != nil)
 		{
 			objContext = [dObj objectForKey:@"textualContext"];
+			showObj = YES;
+		}
+		else if([dObj objectForKey:@"annotationRepresentativeText"] != nil)
+		{
+			objText = [dObj objectForKey:@"annotationRepresentativeText"];
 			showObj = YES;
 		}
 		
